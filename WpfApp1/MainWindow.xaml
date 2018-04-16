@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="startServerBtn" Content="开启服务器" HorizontalAlignment="Left" Margin="23,28,0,0" VerticalAlignment="Top" Width="76" Click="startServerBtn_Click"/>
+        <Button x:Name="serverSendBtn" Content="发送消息" HorizontalAlignment="Left" Margin="23,74,0,0" VerticalAlignment="Top" Width="76" Click="serverSendBtn_Click"/>
+        <TextBox x:Name="serverText" HorizontalAlignment="Left" Height="112" Margin="162,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="610"/>
+        <TextBox x:Name="ipText" HorizontalAlignment="Left" Height="22" Margin="23,150,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="portText" HorizontalAlignment="Left" Height="23" Margin="23,240,0,0" TextWrapping="Wrap" Text="50000" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="端口" HorizontalAlignment="Left" Margin="23,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.025,0.36"/>
+        <Label x:Name="label_Copy" Content="地址" HorizontalAlignment="Left" Margin="23,124,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="udpText" HorizontalAlignment="Left" Height="97" Margin="162,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="610"/>
+        <Button x:Name="button" Content="开启udp监听" HorizontalAlignment="Left" Margin="23,302,0,0" VerticalAlignment="Top" Width="106" Click="button_Click"/>
+    </Grid>
+</Window>
